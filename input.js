@@ -21,6 +21,9 @@ const handleUserInput = function (data) {
       case 'd':
       connection.write("Move: right");
       break;
+      case 'm':
+      connection.write("HII");
+      break;
   }
 };
 

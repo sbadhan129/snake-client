@@ -1,29 +1,27 @@
-const process = require('process');
+const { MOVEUP, MOVELEFT, MOVEDOWN, MOVERIGHT, MSG } = require('./constants');
 
 let connection;
 
 
 const handleUserInput = function (data) {
   if(data === `\u0003`){
-    console.log("Exit")
     process.exit();
   }
-  switch(data){
-    case 'w':
+if (data === MOVEUP)
       connection.write("Move: up");
-      break;
-      case 'a':
+    
+      if (data === MOVELEFT)
       connection.write("Move: left");
-      break;
-      case 's':
+  
+      if (data === MOVEDOWN)
       connection.write("Move: down");
-      break;
-      case 'd':
+      
+      if (data === MOVERIGHT)
       connection.write("Move: right");
-      break;
-      case 'm':
-      connection.write("HII");
-      break;
+      
+      if (MSG [data]){
+        connection.write(MSG [data]); 
+      
   }
 };
 
@@ -32,9 +30,8 @@ const setupInput = (conn) => {
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
-  stdin.resume();
   stdin.on("data", handleUserInput);
-
+  stdin.resume();
   return stdin;
 };
 

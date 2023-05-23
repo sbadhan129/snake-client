@@ -9,12 +9,12 @@ Before you can run this client, you will need to be running the server side whic
 ## Final Product
 
 - Include Screenshot of Gameplay 
-
+(snake%20man.png)
 ## Installation
 - Clone the repository using git clone https://github.com/lighthouse-labs/snek-multiplayer.git in your terminal. 
 - cd into snek-multiplayer and use 'npm install' and use another command 'npm run play'
 
-Make a new repository in your GITHUB and clone in your local terminal and make a file play.js
+- Make a new repository in your GITHUB and clone in your local terminal and make a file play.js
 - Run the node play.js in your snake- Client
 
 

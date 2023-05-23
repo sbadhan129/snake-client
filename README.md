@@ -20,7 +20,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Controls
 - To move up :- W
-- To move down :- 
+- To move down :- S
 - To move left :- A
 - To move right :- W
 

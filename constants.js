@@ -5,7 +5,10 @@ const MOVELEFT = 'a';
 const MOVEDOWN = 's';
 const MOVERIGHT = 'd';
 const MSG = {
-  Says :"well played"
+   't': "Say: Well Played",
+   'f':"Say: Better Luck Next Time..!!",
+   'g':"Say: Welcome",
+   'h':"Say: You are good"
 };
 
 module.exports = {
